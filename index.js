@@ -1,5 +1,5 @@
 const url = "https://api.openai.com/v1/images/generations";
-const key = "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";
+const key = "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";
 
 // const prompt = "Isto é tudo pessoal!";
 
@@ -76,5 +76,8 @@ sendButton.addEventListener("click", (event) => {
         responseContainer.appendChild(div);
       });
     })
-    .catch((error) => console.error(error));
+    .catch(
+      (error) => console.error(error),
+      window.alert("Acontecu um erro", error)
+    );
 });
